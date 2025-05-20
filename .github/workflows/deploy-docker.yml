@@ -33,7 +33,7 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           key: ${{ secrets.SSH_KEY }}
           source: "site.tar"
-          target: "/opt/vitepress-site/site.tar"
+          target: "/opt/vitepress-site"
 
       - name: Load and run Docker image on VPS
         uses: appleboy/ssh-action@v1.0.0
