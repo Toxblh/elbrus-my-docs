@@ -1,0 +1,28 @@
+node_modules
+docs/.vitepress/cache
+docs/.vitepress/dist
+docs/.vitepress/.temp
+
+
+### Obsidian ###
+.obsidian/
+
+### Sublime Text ###
+*.sublime-workspace
+*.sublime-project
+GitHub.sublime-settings
+
+### Visual Studio Code ###
+.vscode/
+.history/
+
+### JetBrains ###
+.idea/
+
+### .env ###
+docs/.env
+
+### team ###
+
+_data/fullteam.json
+.tools/chunk_analyse/stats.html
