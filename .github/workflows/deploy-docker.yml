@@ -21,7 +21,9 @@ jobs:
           docker build -t vitepress-site:latest .
 
       - name: Save Docker image to tar
-        run: docker save vitepress-site:latest -o site.tar
+        run: |
+          docker save vitepress-site:latest -o site.tar
+          chmod 664 site.tar
 
       - name: Copy Docker image to VPS
         uses: appleboy/scp-action@v0.1.5
