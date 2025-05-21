@@ -1,14 +1,13 @@
 import { defineConfig } from "vitepress";
+import { telegram, vk } from './utils/icons'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Эльбрус Wiki",
   description: "Эльбрус Wiki Toxblh. Личная шпаргалка",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "Главная", link: "/" },
+      { text: "О Вики", link: "/about" },
     ],
 
     sidebar: [
@@ -16,23 +15,38 @@ export default defineConfig({
         text: "RTC",
         items: [
           {
+            text: "Установка",
+            link: "/RTC/Использование",
+          },
+          {
             text: "Перепаковка",
             items: [
               {
                 text: "Cтатический бинарник",
-                link: "/RTC/Перепаковка/Статическая.md",
+                link: "/RTC/Перепаковка/Статическая",
               },
               {
                 text: "Динамический бинарник",
-                link: "/RTC/Перепаковка/Динамическая.md",
+                link: "/RTC/Перепаковка/Динамическая",
               },
             ],
           },
-          { text: "Runtime API Examples", link: "/api-examples" },
         ],
       },
     ],
 
-    socialLinks: [{ icon: "github", link: "https://github.com/Toxblh" }],
+    logo: { src: '/assets/logo.png', width: 24, height: 24, alt: 'Эльбрус Wiki' },
+    socialLinks: [
+      {
+        icon: {
+          svg: telegram
+        },
+        link: 'https://t.me/toxblh_linux'
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/Toxblh'
+      }
+    ],
   },
 });

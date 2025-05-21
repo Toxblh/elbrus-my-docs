@@ -8,11 +8,11 @@ hero:
   tagline: "@Toxblh"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Открыть
+      link: /RTC/Использование
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: О вики
+      link: /about
 
 features:
   - title: VLIW
